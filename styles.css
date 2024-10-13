@@ -8,7 +8,7 @@ html {
 .jost-uniquifier {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -16,148 +16,210 @@ html {
   font-family: "Jost", sans-serif;
 }
 .rectangle1316 {
-    position: absolute;
-    background-color: #141224;
-    width: 1920px;
-    height: 1080px;
-  }
-
-.group304 {
-a {
-  color: #FFFFFF;
-
+  /* position: absolute; */
+  background-color: #141224;
+  width: 1920px;
+  height: 1080px;
 }
-    position: absolute;
-    width: 324px;
-    height: 32px;
-    left: 798px;
-    top: 38px;
-    
+
+.navigation-item {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.navigation {
+  background-color: #141224;
+  /* position: absolute; */
+  max-width: 324px;
+  height: 32px;
+  left: 798px;
+  top: 38px;
 }
 
 .roboschool {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Jost";
   top: 344px;
   left: 380px;
-  position: absolute;
+  /* position: absolute; */
   font-size: 30px;
   line-height: 112px;
-
 }
 
 .group211 {
-    margin-top: 160px;
-    margin-left: 860px;
-    width: 783px;
-    height: 918px;
+  margin-top: 160px;
+  margin-left: 860px;
+  width: 783px;
+  height: 918px;
 
-   img {
+  img {
     height: 100%;
     width: 100%;
-   }
   }
+}
 .teachers {
-  position: absolute;
+  /* position: absolute; */
   top: 476px;
   left: 380px;
-  color: #FFFFFF;
-  display:block;
+  color: #ffffff;
+  display: block;
   width: 478px;
   height: 64px;
 
   .button {
-    background-color: #D52027;
-    color: #FFFFFF;
+    background-color: #d52027;
+    color: #ffffff;
     cursor: pointer;
     box-sizing: border-box;
     font-size: 15px;
-    position: absolute;
-    top: 100px;
-    left: 0;
+    /* position: absolute; */
+    /* top: 100px;
+    left: 0; */
     border-radius: 5px;
     width: 260px;
     height: 70px;
-  }    
-
+  }
 }
 
 .definition {
-position: absolute;
-text-align: left;
-width: 891px;
-height: 144px;
-top: 1200px;
-left: 380px;
-font-size: 30px;
-font-weight: 400;
-line-height: 48px;
+  /* position: absolute; */
+  text-align: left;
+  width: 891px;
+  height: 144px;
+  /* top: 1200px;
+  left: 380px; */
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
 }
 
 .firsttable {
-top: 1404px;
-left: 380px;
-position: absolute;
-text-align: left;
-box-sizing: content-box;
-width: 1200px;
+  /* top: 1404px;
+  left: 380px; */
+  /* position: absolute; */
+  text-align: left;
+  box-sizing: content-box;
+  width: 1200px;
 
-thead {
-  color: #D52027;
-  font-size: 70px;
-  line-height: 112px;
-  font-weight: 600;
-}
+  thead {
+    color: #d52027;
+    font-size: 70px;
+    line-height: 112px;
+    font-weight: 600;
+  }
 
-tbody {
-  color: #141024;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 29px;
-}
+  tbody {
+    color: #141024;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+  }
 }
 
 .group306 {
-  top: 1694px;
-  left: 380px;
+  /* top: 1694px;
+  left: 380px; */
   height: 485px;
   width: 1200px;
-  position: absolute;
+  /* position: absolute; */
   text-align: left;
   box-sizing: content-box;
-  
-caption {
-  font-size: 60px;
-  text-align: left;
-  
-}
-thead {
+
+  caption {
+    font-size: 60px;
+    text-align: left;
+  }
+  thead {
     font-size: 30px;
     line-height: 112px;
     font-weight: 600;
   }
-  
-tbody {
+
+  tbody {
     font-size: 18px;
     font-weight: 400;
     line-height: 39px;
-    
   }
 }
 
 .group308 {
-* {box-sizing: border-box;}
-top: 3305px;
-left: 380px;
-width: 1160px;
-height: 640px;
-position: absolute;
-
-
-
-.blue {
-  background-color: #141024;
-  color: #FFFFFF;
- 
+  * {
+    box-sizing: border-box;
   }
+  top: 3305px;
+  left: 380px;
+  width: 1160px;
+  height: 640px;
+  position: absolute;
+
+  .blue {
+    background-color: #141024;
+    color: #ffffff;
+  }
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #141024;
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: all 0.4s ease-out;
+}
+
+.price-card:hover {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #141024;
+  background-color: #141024;
+  padding: 30px 40px;
+  transition: all 0.4s ease-out;
+  color: #ffffff;
+}
+
+.price-card:not(:last-child) {
+  margin-right: 10px;
+}
+
+.price-card_title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;  
+}
+.price-card_price {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;  
+}
+.price-card_description {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+  text-wrap: wrap;
+  width: 50%;
+}
+.price-card_button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+  padding: 25px 54px 25px 54px;
+  border-radius: 5px;
+  background-color: #D52027;
+  border-color: #D52027;
+  color: #ffffff;
 }
