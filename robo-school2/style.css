@@ -1,0 +1,124 @@
+.jost-uniquifier {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: "Jost", sans-serif
+  }
+  
+  * {
+    width: 100%;
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141024;
+    color: #FFFFFF;
+  }
+
+  .navigation-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .headername {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 324px;
+    top: 38px;
+  }
+
+  .navigation-item {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+
+  .headertelephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    
+  }
+
+  .promo {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #141024;
+    color: #FFFFFF;
+    height: 1080px;
+  }
+  
+  .aboutpromo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .aboutpromo:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .roboschool {
+    text-align: left;
+    text-wrap: nowrap;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 112px;
+  }
+
+  .button {
+    width: 260px;
+    height: 79px;
+    top: 590px;
+    left: 380px;
+    padding: 25px 54px 25px 54px;
+    gap: 10px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #D52027;
+    color: #FFFFFF;
+
+;
+    
+  }
+  .about {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .promoimg {
+    align-self: stretch;
+    max-width: 783px;
+    max-height: 917px;
+    border:  80px solid #141024;
+    
+  }
