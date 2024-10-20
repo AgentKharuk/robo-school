@@ -1,10 +1,3 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-
-html {
-  scroll-behavior: smooth;
-}
-
 .jost-uniquifier {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
@@ -13,159 +6,215 @@ html {
 }
 
 * {
-  font-family: "Jost", sans-serif;
-}
-.rectangle1316 {
-  /* position: absolute; */
-  background-color: #141224;
-  width: 1920px;
-  height: 1080px;
+  font-family: "Jost", sans-serif
 }
 
-.navigation-item {
-  color: #ffffff;
-  text-decoration: none;
+* {
+max-width: 1920px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141024;
+  color: #FFFFFF;
+  padding: 0px 30px;
 }
 
 .navigation-item:not(:last-child) {
   margin-right: 10px;
 }
 
+.headername {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+
 .navigation {
-  background-color: #141224;
-  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   max-width: 324px;
-  height: 32px;
-  left: 798px;
   top: 38px;
 }
 
-.roboschool {
-  color: #ffffff;
-  font-family: "Jost";
-  top: 344px;
-  left: 380px;
-  /* position: absolute; */
+.navigation-item {
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.headertelephone {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+
+}
+
+.promo {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141024;
+  color: #FFFFFF;
+  height: 1080px;
+}
+
+.aboutpromo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 380px;
+}
+
+.aboutpromo:not(:last-child) {
+  margin-right: 10px;
+}
+
+.roboschool {
+  text-align: left;
+  text-wrap: nowrap;
+  font-size: 70px;
+  font-weight: 600;
   line-height: 112px;
 }
 
-.group211 {
-  margin-top: 160px;
-  margin-left: 860px;
-  width: 783px;
-  height: 918px;
-
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
-.teachers {
-  /* position: absolute; */
-  top: 476px;
+.button {
+  width: 260px;
+  height: 79px;
+  top: 590px;
   left: 380px;
-  color: #ffffff;
-  display: block;
-  width: 478px;
-  height: 64px;
+  padding: 25px 54px 25px 54px;
+  gap: 10px;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #D52027;
+  color: #FFFFFF;
+}
 
-  .button {
-    background-color: #d52027;
-    color: #ffffff;
-    cursor: pointer;
-    box-sizing: border-box;
-    font-size: 15px;
-    /* position: absolute; */
-    /* top: 100px;
-    left: 0; */
-    border-radius: 5px;
-    width: 260px;
-    height: 70px;
-  }
+.about {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.promoimg {
+  max-width: 783px;
+  max-height: 917px;
+  margin: 0 100px 0 0;
 }
 
 .definition {
-  /* position: absolute; */
-  text-align: left;
-  width: 891px;
-  height: 144px;
-  /* top: 1200px;
-  left: 380px; */
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 48px;
+display: flex;
+justify-content: center;
+text-align: center; 
+font-size: 30px;
+font-weight: 400;
+line-height: 48px;
+text-align: left;
+margin: 100px 100px 0px 380px;
+max-width: 891px;
 }
 
-.firsttable {
-  /* top: 1404px;
-  left: 380px; */
-  /* position: absolute; */
-  text-align: left;
-  box-sizing: content-box;
-  width: 1200px;
-
-  thead {
-    color: #d52027;
-    font-size: 70px;
-    line-height: 112px;
-    font-weight: 600;
-  }
-
-  tbody {
-    color: #141024;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 29px;
-  }
-}
-
-.group306 {
-  /* top: 1694px;
-  left: 380px; */
-  height: 485px;
-  width: 1200px;
-  /* position: absolute; */
-  text-align: left;
-  box-sizing: content-box;
-
-  caption {
-    font-size: 60px;
-    text-align: left;
-  }
-  thead {
-    font-size: 30px;
-    line-height: 112px;
-    font-weight: 600;
-  }
-
-  tbody {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 39px;
-  }
-}
-
-.group308 {
-  * {
-    box-sizing: border-box;
-  }
-  top: 3305px;
-  left: 380px;
-  width: 1160px;
-  height: 640px;
-  position: absolute;
-
-  .blue {
-    background-color: #141024;
-    color: #ffffff;
-  }
-}
-
-.prices {
+.definition-table {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px 100px 0px 380px;
+  max-width: 1150px;
+}
+
+.definition-table-card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.definition-table-title {
+font-size: 70px;
+font-weight: 600;
+line-height: 112px;
+text-align: left;
+color: #D52027;
+}
+
+.definition-table-about {
+font-size: 18px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: left;
+color: #141024B2;
+}
+
+.reward-table-background {
+background-color: #F9F9F9;
+max-height: 485px;
+}
+
+.reward-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 100px 0px 380px;
+  max-width: 1150px;
+}
+
+.reward-table-card:not(:last-child) {
+  margin-right: 60px;
+}
+
+.reward-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 200px 100px 40px 380px;
+  max-width: 682px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.reward-table-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: left;
+  color: #141024;
+}
+
+.reward-table-about {
+  max-width: 360px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #141024B2;
+
+}
+
+
+
+.prices {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 100px 0px 50px 380px;
 }
 
 .price-card {
@@ -197,12 +246,14 @@ html {
   line-height: 48px;
   text-align: center;  
 }
+
 .price-card_price {
   font-size: 50px;
   font-weight: 600;
   line-height: 80px;
   text-align: center;  
 }
+
 .price-card_description {
   align-self: center;
   font-size: 18px;
@@ -212,6 +263,7 @@ html {
   text-wrap: wrap;
   width: 50%;
 }
+
 .price-card_button {
   font-size: 18px;
   font-weight: 400;
@@ -222,4 +274,82 @@ html {
   background-color: #D52027;
   border-color: #D52027;
   color: #ffffff;
+}
+.registration-for-the-course {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height: 460px;
+background-color: #D52027;
+
+}
+
+.stock {
+margin: 70px 0px 50px 380px;
+color: #FFFFFF;
+align-self: flex-start;
+}
+
+.stock h1 {
+font-size: 36px;
+font-weight: 600;
+line-height: 46.8px;
+text-align: left;
+max-width: 476px;
+}
+
+.stock p {
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+}
+
+.registration-form input {
+display: flex;
+flex-direction: column;
+width: 500px;
+gap: 0px;
+border-radius: 5px;
+opacity: 0px;
+height: 64px;
+margin: 10px 0px;
+background-color: #F6F6F6;
+font-size: 18px;
+font-weight: 400;
+line-height: 26.01px;
+text-align: left;
+color: #282944B2;
+}
+
+.registration-form input:last-child {
+  background-color: #141024;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141024;
+  color: #FFFFFF;
+  height: 159px;
+  padding: 0px 30px;
+}
+
+.footerleft h1 {
+font-size: 30px;
+font-weight: 700;
+line-height: 48px;
+text-align: left;
+}
+
+.footerleft h2 {
+font-size: 16px;
+font-weight: 400;
+line-height: 25.6px;
+text-align: left;
+color: #FFFFFFB2;
 }
