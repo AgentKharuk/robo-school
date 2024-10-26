@@ -1,9 +1,4 @@
-.jost-uniquifier {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
+
 
 * {
   font-family: "Jost", sans-serif
@@ -23,7 +18,7 @@ html {
   align-items: center;
   background-color: #141024;
   color: #FFFFFF;
-  padding: 0px 30px;
+  padding: 2% 5%;
 }
 
 .navigation-item:not(:last-child) {
@@ -81,7 +76,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px 380px;
+  margin-left: 20%;
 }
 
 .aboutpromo:not(:last-child) {
@@ -99,14 +94,14 @@ html {
 .button {
   width: 260px;
   height: 79px;
-  top: 590px;
-  left: 380px;
   padding: 25px 54px 25px 54px;
   gap: 10px;
-  border-radius: 5px 0px 0px 0px;
+  border-radius: 5px;
+  border-style: none;
   opacity: 0px;
   background-color: #D52027;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .about {
@@ -117,9 +112,14 @@ html {
 }
 
 .promoimg {
+  background-image: url("/robo-school2/images/group211.png");
+  background-size:cover;
+  background-position: bottom;
   max-width: 783px;
   max-height: 917px;
-  margin: 0 100px 0 0;
+  margin-right: 10%;
+  align-self: flex-end;
+  
 }
 
 .definition {
@@ -208,7 +208,61 @@ max-height: 485px;
 
 }
 
+.carousel__name {
+display: flex;
+text-align: left;
+align-items: center;
+margin-left: 24%;
+font-size: 50px;
+font-weight: 600;
+line-height: 80px;
+}
 
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-left: 24%;
+}
+
+.slide {
+  flex: 0 0 20%;
+  flex-direction: column;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 600px; */
+  padding-right: 1%;
+  margin: 0;
+    row-gap: 0px;
+
+}
+
+.slide_image {
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.slide__image__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38.4px;
+  align-self: flex-start;
+  margin-top: 5%;
+}
+
+.slide__about {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  align-self: flex-start;
+  margin: 0;
+}
 
 .prices {
   display: flex;
@@ -276,8 +330,9 @@ max-height: 485px;
   color: #ffffff;
 }
 .registration-for-the-course {
+padding-left: 24%;
 display: flex;
-justify-content: flex-start;
+/* justify-content: flex-start; */
 align-items: center;
 height: 460px;
 background-color: #D52027;
@@ -285,9 +340,10 @@ background-color: #D52027;
 }
 
 .stock {
-margin: 70px 0px 50px 380px;
 color: #FFFFFF;
 align-self: flex-start;
+padding-top: 6%;
+
 }
 
 .stock h1 {
@@ -305,12 +361,14 @@ line-height: 26px;
 text-align: left;
 }
 
-.registration-form input {
+
+.registration__form input {
 display: flex;
 flex-direction: column;
+align-content: space-between;
 width: 500px;
-gap: 0px;
 border-radius: 5px;
+border-style: none;
 opacity: 0px;
 height: 64px;
 margin: 10px 0px;
@@ -322,11 +380,16 @@ text-align: left;
 color: #282944B2;
 }
 
-.registration-form input:last-child {
+.registration__form ::placeholder {
+  padding-left: 15px;
+}
+
+.registration__form input:last-child {
   background-color: #141024;
   color: #FFFFFF;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .footer {
