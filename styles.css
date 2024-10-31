@@ -436,8 +436,8 @@ body {
   background: rgba(0,0,0,0.5); /* цвет фона */
   z-index: 1050;
   opacity: 0; /* по умолчанию модальное окно прозрачно */
-  -webkit-transition: opacity 200ms ease-in; 
-  -moz-transition: opacity 200ms ease-in;
+  /* -webkit-transition: opacity 200ms ease-in; 
+  -moz-transition: opacity 200ms ease-in; */
   transition: opacity 200ms ease-in; /* анимация перехода */
   pointer-events: none; /* элемент невидим для событий мыши */
   margin: 0;
@@ -464,17 +464,17 @@ body {
 /* свойства для блока, содержащего контент модального окна */ 
 .modal-content {
   position: relative;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  display: -ms-flexbox; */
   display: flex;
-  -webkit-box-orient: vertical;
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
+  -ms-flex-direction: column; */
   flex-direction: column;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
+  /* -webkit-background-clip: padding-box; */
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.2);
   border-radius: .3rem;
@@ -482,7 +482,7 @@ body {
 }
 @media (min-width: 768px) {
 .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    /* -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5); */
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 }
@@ -527,6 +527,14 @@ body {
   justify-self: left;
 }
 
+.modal-title-about {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+
+}
+
 /* свойства для кнопки "Закрыть" */
 .close {
   /* float: right; */
@@ -547,10 +555,52 @@ body {
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
 position: relative;
-  -webkit-box-flex: 1;
+  /* -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
+  -ms-flex: 1 1 auto; */
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 20% 0% 2%;  
+  flex-wrap: wrap;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tab > label {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #141024;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.tab > input[type="radio"]:checked + label {
+  color: #D52027;
 }
