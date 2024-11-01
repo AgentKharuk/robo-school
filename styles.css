@@ -458,7 +458,7 @@ body {
 @media (min-width: 576px) {
 .modal-dialog {
     max-width: 894px;
-    margin: 130px auto; /* для отображения модального окна по центру */
+    margin: 30px auto; /* для отображения модального окна по центру */
 }
 }
 /* свойства для блока, содержащего контент модального окна */ 
@@ -477,7 +477,7 @@ body {
   /* -webkit-background-clip: padding-box; */
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.2);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   outline: 0;
 }
 @media (min-width: 768px) {
@@ -501,15 +501,18 @@ body {
   -webkit-justify-content: space-between; */
   /* -ms-flex-pack: justify; */
   justify-content: space-between;
-  padding: 15px;
+  padding: 3%;
   border-bottom: 1px solid #eceeef;
+}
+
+.modal-header-information {
+display: flex;
+justify-content: left;
 }
 
 .modal-header-photo {
   width: 160px;
   height: 222px;
-  top: 599px;
-  left: 530px;
   gap: 0px;
   border-radius: 20px 0px 0px 0px;
   opacity: 0px;
@@ -520,19 +523,28 @@ body {
   flex-direction: column;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 0;
   font-size: 1.25rem;
   font-weight: 500;
   align-self: flex-start;
-  justify-self: left;
+  justify-content: left;
+  padding-left: 5%;
+  
+  
 }
+
 
 .modal-title-about {
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
   text-align: left;
+  text-wrap: nowrap;
 
+}
+
+.social__networks {
+  flex-direction: row;
 }
 
 /* свойства для кнопки "Закрыть" */
@@ -544,6 +556,7 @@ body {
   align-self: flex-start;
   color: #141024B2;
   text-decoration: none;
+  
 }
 /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
 .close:focus, .close:hover {
