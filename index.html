@@ -21,9 +21,9 @@
 <body>
     <div class="promo">
         <div class="aboutpromo">
-            <h1 class="roboschool">ROBO SCHOOL</h1>
+            <span class="roboschool">ROBO SCHOOL</span>
             <p class="about">Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
-            <input type="button" value="Записаться на курс" class="button" /> 
+            <input type="button" form="registration" value="Записаться на курс" class="button" /> 
         </div>
             <img class="promoimg" src="/robo-school2/images/group211.png" alt="group211" />
     </div>
@@ -60,11 +60,11 @@
         </div>
         <div class="reward-table-card">
             <h1 class="reward-table-title">Знания</h1>
-            <p class="reward-table-about">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+            <p class="reward-table-about">По основам разработки учебно-методических комплексов <br> по робототехнике и программированию</p>
         </div>
         <div class="reward-table-card">
             <h1 class="reward-table-title">Практику</h1>
-            <p class="reward-table-about">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+            <p class="reward-table-about">Возможность пройти практику по преподаванию робототехники на базе <br> R:ED LAB (в оффлайн или онлайн формате)</p>
         </div>
       </div>
     </div>
@@ -72,32 +72,35 @@
     <div class="carousel">
         <div class="slide">
             <img class="slide__image" src="/robo-school2/images/laim.png" alt="Ирина Лайм преподаватель по робототехнике"/>
-            <p class="slide__image__name">Ирина Лайм</p>
-            <p class="slide__about">преподаватель по робототехнике</p>
-            <a href="#openModal">Подробнее</a>
+            <span class="slide__image__name">Ирина Лайм</span>
+            <span class="slide__about">преподаватель по робототехнике</span>
+            <!-- <a class="modal__teacher" href="#openModal">Подробнее</a> -->
         </div>
         <div class="slide">
             <img class="slide__image" src="/robo-school2/images/orlova.png" alt="Марина Орлова преподаватель по робототехнике"/>
-            <p class="slide__image__name">Марина Орлова</p>
-            <p class="slide__about">преподаватель по робототехнике</p>
+            <span class="slide__image__name">Марина Орлова</span>
+            <span class="slide__about">преподаватель по робототехнике</span>
+            <a class="modal__teacher" href="#openModal">Подробнее</a>
         </div>
         <div class="slide">
             <img class="slide__image" src="/robo-school2/images/petrov.png" alt="Максим Петров преподаватель по программированию"/>
-            <p class="slide__image__name">Максим Петров</p>
-            <p class="slide__about">преподаватель по программированию</p>
+            <span class="slide__image__name">Максим Петров</span>
+            <span class="slide__about">преподаватель по программированию</span>
+            <!-- <a class="modal__teacher" href="#openModal">Подробнее</a> -->
         </div>
         <div class="slide">
             <img class="slide__image" src="/robo-school2/images/nazarov.png" alt="Константин Назаров преподаватель по робототехнике"/>
-            <p class="slide__image__name">Константин Назаров</p>
-            <p class="slide__about">преподаватель по робототехнике</p>
+            <span class="slide__image__name">Константин Назаров</span>
+            <span class="slide__about">преподаватель по робототехнике</span>
+            <!-- <a class="modal__teacher" href="#openModal">Подробнее</a> -->
         </div>
         <div class="slide">
             <img class="slide__image" src="/robo-school2/images/vesennaya.png" alt="Лиза Весенняя преподаватель по программированию"/>
-            <p class="slide__image__name">Лиза Весенняя</p>
-            <p class="slide__about">преподаватель по программированию</p>
+            <span class="slide__image__name">Лиза Весенняя</span>
+            <span class="slide__about">преподаватель по программированию</span>
+            <!-- <a class="modal__teacher" href="#openModal">Подробнее</a> -->
         </div>
       </div>
-
       <div id="openModal" class="modal">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -137,16 +140,11 @@
                       Содержимое 3...
                     </div>
                 </div>
-              <!-- <img class="modal-title-photo" src="/robo-school2/images/orlova.png" alt="Марина Орлова преподаватель по робототехнике" />
-              <h3 class="modal-title">Марина Орлова</h3>
-              <h4 class="modal-title-about">преподаватель по робототехнике</h4>     -->
-              <!-- <p>Содержимое модального окна...</p> -->
             </div>
           </div>
         </div>
       </div>
-
-
+    <span class="price-title">Выберите нужный пакет</span>
     <div id="price" class="prices">
         <div class="price-card">
             <h1 class="price-card_title">– PRO –</h1>
@@ -178,7 +176,7 @@
         <h1>Запишитесь на курс со скидкой 10%</h1>
         <p>Акция действительна до 10 марта 2022 года</p>
     </div>
-    <div class="registration__form">
+    <div id="registration" class="registration__form">
     <form action="" method="post">
         <!-- <label for="name"></label> -->
         <input type="text" id="name" name="name" placeholder="Имя" required>
