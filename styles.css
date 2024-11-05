@@ -1,5 +1,3 @@
-
-
 /* * {
   font-family: "Jost", sans-serif
 }
@@ -11,7 +9,7 @@ max-width: 1920px;
 html {
   scroll-behavior: smooth;
   max-width: 1920px;
-  font-family: "Jost", sans-serif
+  font-family: "Jost", sans-serif;
 }
 
 .header {
@@ -19,7 +17,7 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #141024;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 2% 5%;
 }
 
@@ -40,7 +38,7 @@ html {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .navigation-item:not(:last-child) {
@@ -61,12 +59,12 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #141024;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 1080px;
 }
 
 .aboutpromo {
-  margin-left: 22%
+  margin-left: 22%;
 }
 
 .aboutpromo:not(:last-child) {
@@ -86,8 +84,8 @@ html {
   padding: 25px 54px 25px 54px;
   border-radius: 5px;
   border-style: none;
-  background-color: #D52027;
-  color: #FFFFFF;
+  background-color: #d52027;
+  color: #ffffff;
   cursor: pointer;
   margin-top: 5%;
 }
@@ -106,14 +104,14 @@ html {
 }
 
 .definition {
-display: flex;
-/* justify-content: center; */
-font-size: 30px;
-font-weight: 400;
-line-height: 48px;
-/* text-align: left; */
-margin: 8% 10% 0% 22%;
-max-width: 891px;
+  display: flex;
+  /* justify-content: center; */
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  /* text-align: left; */
+  margin: 8% 10% 0% 22%;
+  max-width: 891px;
 }
 
 .definition-table {
@@ -129,24 +127,24 @@ max-width: 891px;
 }
 
 .definition-table-title {
-font-size: 70px;
-font-weight: 600;
-line-height: 112px;
-text-align: left;
-color: #D52027;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 112px;
+  text-align: left;
+  color: #d52027;
 }
 
 .definition-table-about {
-font-size: 18px;
-font-weight: 400;
-line-height: 28.8px;
-text-align: left;
-color: #141024B2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #141024b2;
 }
 
 .reward-table-background {
-background-color: #F9F9F9;
-max-height: 485px;
+  background-color: #f9f9f9;
+  max-height: 485px;
 }
 
 .reward-table {
@@ -183,7 +181,7 @@ max-height: 485px;
   font-weight: 400;
   line-height: 28.8px;
   text-align: left;
-  color: #141024B2;
+  color: #141024b2;
 }
 
 .carousel__name {
@@ -236,11 +234,11 @@ max-height: 485px;
 }
 
 .price-title {
-display: flex;
-font-size: 50px;
-font-weight: 600;
-line-height: 80px;
-padding: 6% 0% 0% 22%;
+  display: flex;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  padding: 6% 0% 0% 22%;
 }
 
 .prices {
@@ -277,14 +275,14 @@ padding: 6% 0% 0% 22%;
   font-size: 30px;
   font-weight: 600;
   line-height: 48px;
-  text-align: center;  
+  text-align: center;
 }
 
 .price-card_price {
   font-size: 50px;
   font-weight: 600;
   line-height: 80px;
-  text-align: center;  
+  text-align: center;
 }
 
 .price-card_description {
@@ -304,58 +302,57 @@ padding: 6% 0% 0% 22%;
   text-align: center;
   padding: 25px 54px 25px 54px;
   border-radius: 5px;
-  background-color: #D52027;
-  border-color: #D52027;
+  background-color: #d52027;
+  border-color: #d52027;
   color: #ffffff;
   gap: 10px;
 }
 
 .registration-for-the-course {
-padding-left: 22%;
-display: flex;
-align-items: center;
-height: 460px;
-background-color: #D52027;
+  padding-left: 22%;
+  display: flex;
+  align-items: center;
+  height: 460px;
+  background-color: #d52027;
 }
 
 .stock {
-color: #FFFFFF;
-align-self: flex-start;
-padding-top: 6%;
+  color: #ffffff;
+  align-self: flex-start;
+  padding-top: 6%;
 }
 
 .stock h1 {
-font-size: 36px;
-font-weight: 600;
-line-height: 46.8px;
-text-align: left;
-max-width: 476px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46.8px;
+  text-align: left;
+  max-width: 476px;
 }
 
 .stock p {
-font-size: 20px;
-font-weight: 400;
-line-height: 26px;
-text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
 }
 
-
 .registration__form input {
-display: flex;
-flex-direction: column;
-align-content: space-between;
-width: 500px;
-border-radius: 5px;
-border-style: none;
-opacity: 0px;
-height: 64px;
-margin: 10px 0px;
-background-color: #F6F6F6;
-font-size: 18px;
-font-weight: 400;
-line-height: 26.01px;
-text-align: left;
-color: #282944B2;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 500px;
+  border-radius: 5px;
+  border-style: none;
+  opacity: 0px;
+  height: 64px;
+  margin: 10px 0px;
+  background-color: #f6f6f6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.01px;
+  text-align: left;
+  color: #282944b2;
 }
 
 .registration__form ::placeholder {
@@ -364,7 +361,7 @@ color: #282944B2;
 
 .registration__form input:last-child {
   background-color: #141024;
-  color: #FFFFFF;
+  color: #ffffff;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -375,24 +372,24 @@ color: #282944B2;
   justify-content: space-between;
   align-items: center;
   background-color: #141024;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 159px;
   padding: 0px 30px;
 }
 
 .footerleft h1 {
-font-size: 30px;
-font-weight: 700;
-line-height: 48px;
-text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
 }
 
 .footerleft h2 {
-font-size: 16px;
-font-weight: 400;
-line-height: 25.6px;
-text-align: left;
-color: #FFFFFFB2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+  color: #ffffffb2;
 }
 
 /* стилизация содержимого страницы */
@@ -402,7 +399,7 @@ body {
   line-height: 1.5;
   color: #292b2c;
   background-color: #fff;
-} 
+}
 
 /* свойства модального окна по умолчанию */
 .modal {
@@ -411,7 +408,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.5); /* цвет фона */
+  background: rgba(0, 0, 0, 0.5); /* цвет фона */
   z-index: 1050;
   opacity: 0; /* по умолчанию модальное окно прозрачно */
   /* -webkit-transition: opacity 200ms ease-in; 
@@ -427,7 +424,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   padding: 4% 0% 16% 0%;
-  color: #D52027;
+  color: #d52027;
 }
 
 /* при отображении модального окно */
@@ -443,12 +440,12 @@ body {
   margin: 10px;
 }
 @media (min-width: 576px) {
-.modal-dialog {
+  .modal-dialog {
     max-width: 894px;
     margin: 30px auto; /* для отображения модального окна по центру */
+  }
 }
-}
-/* свойства для блока, содержащего контент модального окна */ 
+/* свойства для блока, содержащего контент модального окна */
 .modal-content {
   position: relative;
   /* display: -webkit-box;
@@ -463,15 +460,15 @@ body {
   background-color: #fff;
   /* -webkit-background-clip: padding-box; */
   background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
 }
 @media (min-width: 768px) {
-.modal-content {
+  .modal-content {
     /* -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5); */
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
 }
 /* свойства для заголовка модального окна */
 .modal-header {
@@ -493,8 +490,8 @@ body {
 }
 
 .modal-header-information {
-display: flex;
-justify-content: left;
+  display: flex;
+  justify-content: left;
 }
 
 .modal-header-photo {
@@ -518,7 +515,6 @@ justify-content: left;
   padding-left: 5%;
 }
 
-
 .modal-title-about {
   font-size: 18px;
   font-weight: 400;
@@ -538,20 +534,21 @@ justify-content: left;
   font-weight: 400;
   line-height: 28.8px;
   align-self: flex-start;
-  color: #141024B2;
+  color: #141024b2;
   text-decoration: none;
 }
 
 /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-.close:focus, .close:hover {
+.close:focus,
+.close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-  opacity: .75;
+  opacity: 0.75;
 }
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
-position: relative;
+  position: relative;
   /* -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto; */
@@ -563,7 +560,7 @@ position: relative;
 .tab {
   display: flex;
   justify-content: space-between;
-  margin: 0% 20% 0% 2%;  
+  margin: 0% 20% 0% 2%;
   flex-wrap: wrap;
 }
 
@@ -581,9 +578,9 @@ position: relative;
   text-align: left;
 }
 
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3 {
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
   display: block;
 }
 
@@ -598,5 +595,5 @@ position: relative;
 }
 
 .tab > input[type="radio"]:checked + label {
-  color: #D52027;
+  color: #d52027;
 }
