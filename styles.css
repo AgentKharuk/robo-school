@@ -18,11 +18,10 @@ html {
   align-items: center;
   background-color: #141024;
   color: #ffffff;
-  padding: 2% 5%;
+  padding: 20px 60px;
 }
 
-.headername {
-  display: flex;
+.header__name {
   font-size: 30px;
   font-weight: 700;
 }
@@ -33,21 +32,19 @@ html {
   max-width: 324px;
 }
 
-.navigation-item {
-  display: flex;
+.navigation__item {
+  text-wrap: nowrap;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
   color: #ffffff;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 10px;
+.navigation__item:not(:last-child) {
+  margin-right: 2%;
 }
 
-.headertelephone {
-  display: flex;
-  flex-direction: row;
+.header__telephone {
   justify-content: right;
   font-size: 30px;
   font-weight: 600;
@@ -63,15 +60,15 @@ html {
   height: 1080px;
 }
 
-.aboutpromo {
+.promo-information {
   margin-left: 22%;
 }
 
-.aboutpromo:not(:last-child) {
-  margin-right: 10px;
+.promo-information:not(:last-child) {
+  margin-right: 2%;
 }
 
-.roboschool {
+.promo-information__name {
   text-align: left;
   text-wrap: nowrap;
   font-size: 70px;
@@ -90,13 +87,13 @@ html {
   margin-top: 5%;
 }
 
-.about {
+.promo-information__about {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
 }
 
-.promoimg {
+.promo__img {
   max-width: 783px;
   max-height: 917px;
   margin-right: 10%;
@@ -105,11 +102,9 @@ html {
 
 .definition {
   display: flex;
-  /* justify-content: center; */
   font-size: 30px;
   font-weight: 400;
   line-height: 48px;
-  /* text-align: left; */
   margin: 8% 10% 0% 22%;
   max-width: 891px;
 }
@@ -126,7 +121,7 @@ html {
   margin-right: 2%;
 }
 
-.definition-table-title {
+.definition-table-card__title {
   font-size: 70px;
   font-weight: 600;
   line-height: 112px;
@@ -134,10 +129,10 @@ html {
   color: #d52027;
 }
 
-.definition-table-about {
+.definition-table-card__about {
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: left;
   color: #141024b2;
 }
@@ -167,15 +162,15 @@ html {
   font-weight: 600;
 }
 
-.reward-table-title {
+.reward-table-card__title {
   font-size: 24px;
   font-weight: 600;
-  line-height: 38.4px;
+  line-height: 38px;
   text-align: left;
   color: #141024;
 }
 
-.reward-table-about {
+.reward-table-card__about {
   max-width: 360px;
   font-size: 18px;
   font-weight: 400;
@@ -184,7 +179,7 @@ html {
   color: #141024b2;
 }
 
-.carousel__name {
+.carousel-name {
   display: flex;
   margin: 7% 0% 5% 22%;
   font-size: 50px;
@@ -271,21 +266,21 @@ html {
   margin-right: 10px;
 }
 
-.price-card_title {
+.price-card__title {
   font-size: 30px;
   font-weight: 600;
   line-height: 48px;
   text-align: center;
 }
 
-.price-card_price {
+.price-card__price {
   font-size: 50px;
   font-weight: 600;
   line-height: 80px;
   text-align: center;
 }
 
-.price-card_description {
+.price-card__description {
   align-self: center;
   font-size: 18px;
   font-weight: 400;
@@ -295,7 +290,7 @@ html {
   width: 70%;
 }
 
-.price-card_button {
+.price-card__button {
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
@@ -306,6 +301,7 @@ html {
   border-color: #d52027;
   color: #ffffff;
   gap: 10px;
+  cursor: pointer;
 }
 
 .registration-for-the-course {
@@ -377,14 +373,14 @@ html {
   padding: 0px 30px;
 }
 
-.footerleft h1 {
+.footer__left h1 {
   font-size: 30px;
   font-weight: 700;
   line-height: 48px;
   text-align: left;
 }
 
-.footerleft h2 {
+.footer__left h2 {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
@@ -419,7 +415,7 @@ body {
   padding: 0;
 }
 
-.modal__teacher {
+.modal-teacher {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
@@ -489,12 +485,12 @@ body {
   border-bottom: 1px solid #eceeef;
 }
 
-.modal-header-information {
+.modal-header__information {
   display: flex;
   justify-content: left;
 }
 
-.modal-header-photo {
+.modal-header__photo {
   width: 160px;
   height: 222px;
   gap: 0px;
@@ -515,7 +511,7 @@ body {
   padding-left: 5%;
 }
 
-.modal-title-about {
+.modal-title__about {
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;

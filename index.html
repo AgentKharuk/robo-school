@@ -12,32 +12,27 @@
     <link rel="stylesheet" href="styles.css" />
     <title>ROBO SCHOOL</title>
     <header class="header">
-      <a class="headername">ROBO.SCHOOL</a>
+      <a class="header__name">ROBO.SCHOOL</a>
       <nav class="navigation">
-        <a class="navigation-item" href="#about">О школе</a>
-        <a class="navigation-item" href="#coach">Тренеры</a>
-        <a class="navigation-item" href="#price">Стоимость</a>
+        <a class="navigation__item" href="#about">О школе</a>
+        <a class="navigation__item" href="#coach">Тренеры</a>
+        <a class="navigation__item" href="#price">Стоимость</a>
       </nav>
-      <a class="headertelephone">+7 800 000 11 22</a>
+      <a class="header__telephone">+7 800 000 11 22</a>
     </header>
   </head>
   <body>
     <div class="promo">
-      <div class="aboutpromo">
-        <span class="roboschool">ROBO SCHOOL</span>
-        <p class="about">
+      <div class="promo-information">
+        <span class="promo-information__name">ROBO SCHOOL</span>
+        <p class="promo-information__about">
           Курсы повышения квалификации по робототехнике для педагогов начальной
           школы
         </p>
-        <input
-          type="button"
-          form="registration"
-          value="Записаться на курс"
-          class="button"
-        />
+        <button type="button" class="button">Записться на курс</button>
       </div>
       <img
-        class="promoimg"
+        class="promo__img"
         src="/robo-school2/images/group211.png"
         alt="group211"
       />
@@ -50,26 +45,26 @@
     </div>
     <div class="definition-table">
       <div class="definition-table-card">
-        <h1 class="definition-table-title">10</h1>
-        <p class="definition-table-about">
+        <h1 class="definition-table-card__title">10</h1>
+        <p class="definition-table-card__about">
           УМК по различным направлениям по робототехнике
         </p>
       </div>
       <div class="definition-table-card">
-        <h1 class="definition-table-title">20</h1>
-        <p class="definition-table-about">
+        <h1 class="definition-table-card__title">20</h1>
+        <p class="definition-table-card__about">
           Школ, в которых запущена робототехника
         </p>
       </div>
       <div class="definition-table-card">
-        <h1 class="definition-table-title">100</h1>
-        <p class="definition-table-about">
+        <h1 class="definition-table-card__title">100</h1>
+        <p class="definition-table-card__about">
           Педагогов прошедших курсы повышения квалификации
         </p>
       </div>
       <div class="definition-table-card">
-        <h1 class="definition-table-title">10 000</h1>
-        <p class="definition-table-about">
+        <h1 class="definition-table-card__title">10 000</h1>
+        <p class="definition-table-card__about">
           Обученных детей на базе собственных центров
         </p>
       </div>
@@ -78,22 +73,22 @@
       <h1 class="reward-title">Что вы получите после курса</h1>
       <div class="reward-table">
         <div class="reward-table-card">
-          <h1 class="reward-table-title">Удостоверение</h1>
-          <p class="reward-table-about">
+          <h1 class="reward-table-card__title">Удостоверение</h1>
+          <p class="reward-table-card__about">
             Дающее право преподавать робототехнику для детей 6-12 лет в
             образовательных учреждениях
           </p>
         </div>
         <div class="reward-table-card">
-          <h1 class="reward-table-title">Знания</h1>
-          <p class="reward-table-about">
+          <h1 class="reward-table-card__title">Знания</h1>
+          <p class="reward-table-card__about">
             По основам разработки учебно-методических комплексов <br />
             по робототехнике и программированию
           </p>
         </div>
         <div class="reward-table-card">
-          <h1 class="reward-table-title">Практику</h1>
-          <p class="reward-table-about">
+          <h1 class="reward-table-card__title">Практику</h1>
+          <p class="reward-table-card__about">
             Возможность пройти практику по преподаванию робототехники на базе
             <br />
             R:ED LAB (в оффлайн или онлайн формате)
@@ -101,7 +96,7 @@
         </div>
       </div>
     </div>
-    <h1 id="coach" class="carousel__name">Профессиональные тренеры</h1>
+    <h1 id="coach" class="carousel-name">Профессиональные тренеры</h1>
     <div class="carousel">
       <div class="slide">
         <img
@@ -121,7 +116,7 @@
         />
         <span class="slide__image__name">Марина Орлова</span>
         <span class="slide__about">преподаватель по робототехнике</span>
-        <a class="modal__teacher" href="#openModal">Подробнее</a>
+        <a class="modal-teacher" href="#openModal">Подробнее</a>
       </div>
       <div class="slide">
         <img
@@ -158,15 +153,15 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-header-information">
+            <div class="modal-header__information">
               <img
-                class="modal-header-photo"
+                class="modal-header__photo"
                 src="/robo-school2/images/orlova.png"
                 alt="Марина Орлова преподаватель по робототехнике"
               />
               <div class="modal-title">
-                <h3 class="modal-title-name">Марина Орлова</h3>
-                <span class="modal-title-about"
+                <h3 class="modal-title__name">Марина Орлова</h3>
+                <span class="modal-title__about"
                   >преподаватель по робототехнике</span
                 >
                 <div class="social__networks">
@@ -218,24 +213,24 @@
     <span class="price-title">Выберите нужный пакет</span>
     <div id="price" class="prices">
       <div class="price-card">
-        <h1 class="price-card_title">– PRO –</h1>
-        <h1 class="price-card_price">20.000 ₽</h1>
-        <p class="price-card_description">
+        <h1 class="price-card__title">– PRO –</h1>
+        <h1 class="price-card__price">20.000 ₽</h1>
+        <p class="price-card__description">
           УМК по робототехнике и программированию
         </p>
-        <button class="price-card_button">Оставить заявку</button>
+        <button class="price-card__button">Оставить заявку</button>
       </div>
       <div class="price-card">
-        <h1 class="price-card_title">– ROBO –</h1>
-        <h1 class="price-card_price">15.000 ₽</h1>
-        <p class="price-card_description">УМК по робототетхнике</p>
-        <button class="price-card_button">Оставить заявку</button>
+        <h1 class="price-card__title">– ROBO –</h1>
+        <h1 class="price-card__price">15.000 ₽</h1>
+        <p class="price-card__description">УМК по робототетхнике</p>
+        <button class="price-card__button">Оставить заявку</button>
       </div>
       <div class="price-card">
-        <h1 class="price-card_title">– PROG –</h1>
-        <h1 class="price-card_price">10.000 ₽</h1>
-        <p class="price-card_description">УМК по программированию</p>
-        <button class="price-card_button">Оставить заявку</button>
+        <h1 class="price-card__title">– PROG –</h1>
+        <h1 class="price-card__price">10.000 ₽</h1>
+        <p class="price-card__description">УМК по программированию</p>
+        <button class="price-card__button">Оставить заявку</button>
       </div>
     </div>
     <div class="registration-for-the-course">
@@ -271,11 +266,11 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="footerleft">
+      <div class="footer__left">
         <h1>ROBO.SCHOOL</h1>
         <h2>© ROBO.SCHOOL</h2>
       </div>
-      <a class="footertelephone">+7 800 000 11 22</a>
+      <a class="footer__telephone">+7 800 000 11 22</a>
     </footer>
   </body>
 </html>
