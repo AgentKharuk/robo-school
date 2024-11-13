@@ -1,0 +1,568 @@
+html {
+  scroll-behavior: smooth;
+  max-width: 1920px;
+  font-family: "Jost", sans-serif;
+  --main-bg-color: #141024;
+  --white-text-color: #ffffff;
+  --red-color: #d52027;
+  --reward-bg-color: #f9f9f9;
+  --registration-form-bg-color: #f6f6f6;
+  --footer-logo-text-color: #ffffffb2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
+  padding: 20px 60px;
+}
+
+.header__name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  max-width: 324px;
+}
+
+.navigation__item {
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white-text-color);
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 2%;
+}
+
+.header__telephone {
+  justify-content: right;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.promo {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
+  height: 1080px;
+}
+
+.promo-information {
+  margin-left: 22%;
+}
+
+.promo-information:not(:last-child) {
+  margin-right: 2%;
+}
+
+.promo-information__name {
+  text-align: left;
+  text-wrap: nowrap;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.button {
+  text-decoration: none;
+  width: 260px;
+  height: 79px;
+  padding: 25px 54px 25px 54px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--red-color);
+  color: var(--white-text-color);
+  cursor: pointer;
+}
+
+.promo-information__about {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 3rem;
+}
+
+.promo__img {
+  max-width: 783px;
+  max-height: 917px;
+  margin-right: 10%;
+  align-self: flex-end;
+}
+
+.definition {
+  display: flex;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 8% 10% 0% 22%;
+  max-width: 891px;
+}
+
+.definition-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 8% 0% 22%;
+  max-width: 1150px;
+}
+
+.definition-table-card:not(:last-child) {
+  margin-right: 2%;
+}
+
+.definition-table-card__title {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 112px;
+  text-align: left;
+  color: var(--red-color);
+}
+
+.definition-table-card__about {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  color: #141024b2;
+}
+
+.reward-table-background {
+  background-color: var(--reward-bg-color);
+  max-height: 485px;
+}
+
+.reward-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 0% 7% 22%;
+  max-width: 1150px;
+}
+
+.reward-table-card:not(:last-child) {
+  margin-right: 2%;
+}
+
+.reward-title {
+  display: flex;
+  padding: 6% 0% 0% 22%;
+  max-width: 682px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.reward-table-card__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: left;
+  color: #141024;
+}
+
+.reward-table-card__about {
+  max-width: 360px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  color: #141024b2;
+}
+
+.carousel-name {
+  display: flex;
+  margin: 7% 0% 5% 22%;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  margin-left: 22%;
+}
+
+.slide {
+  flex: 0 0 20%;
+  flex-direction: column;
+  scroll-snap-align: start;
+  display: flex;
+  padding-right: 1%;
+  margin: 0;
+  row-gap: 0px;
+}
+
+.slide_image {
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.slide__image__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38px;
+  align-self: flex-start;
+  margin-top: 5%;
+}
+
+.slide__about {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  align-self: flex-start;
+  margin-top: 3%;
+}
+
+.price-title {
+  display: flex;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  padding: 6% 0% 0% 22%;
+}
+
+.prices {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3% 0% 5% 22%;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: all 0.4s ease-out;
+}
+
+.price-card:hover {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #141024;
+  background-color: #141024;
+  padding: 30px 40px;
+  transition: all 0.4s ease-out;
+  color: var(--white-text-color);
+}
+
+.price-card:not(:last-child) {
+  margin-right: 10px;
+}
+
+.price-card__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+}
+
+.price-card__price {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;
+}
+
+.price-card__description {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  text-wrap: wrap;
+  width: 70%;
+}
+
+.price-card__button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  padding: 25px 54px 25px 54px;
+  border-radius: 5px;
+  background-color: var(--red-color);
+  border-color: var(--red-color);
+  color: var(--white-text-color);
+  gap: 10px;
+  cursor: pointer;
+}
+
+.registration-for-the-course {
+  padding-left: 22%;
+  display: flex;
+  align-items: center;
+  height: 460px;
+  background-color: var(--red-color);
+}
+
+.stock {
+  color: var(--white-text-color);
+  align-self: flex-start;
+  padding-top: 6%;
+}
+
+.stock h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  max-width: 476px;
+}
+
+.stock p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+
+.registration__form input {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 500px;
+  border-radius: 5px;
+  border-style: none;
+  opacity: 0px;
+  height: 64px;
+  margin: 10px 0px;
+  background-color: var(--registration-form-bg-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #282944b2;
+}
+
+.registration__form ::placeholder {
+  padding-left: 15px;
+}
+
+.registration__form input:last-child {
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
+  height: 159px;
+  padding: 0px 30px;
+}
+
+.footer__left h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+
+.footer__left h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: var(--footer-logo-text-color);
+}
+
+/* стилизация содержимого страницы */
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  background-color: #fff;
+}
+
+/* свойства модального окна по умолчанию */
+.modal {
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* цвет фона */
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+
+.modal-teacher {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 4% 0% 16% 0%;
+  color: var(--red-color);
+}
+
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 894px;
+    margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+  border-bottom: 1px solid #eceeef;
+}
+
+.modal-header__information {
+  display: flex;
+  justify-content: left;
+}
+
+.modal-header__photo {
+  width: 160px;
+  height: 222px;
+  gap: 0px;
+  border-radius: 20px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.modal-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  align-self: flex-start;
+  justify-content: left;
+  padding-left: 5%;
+}
+
+.modal-title__about {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.social__networks {
+  flex-direction: row;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  align-self: flex-start;
+  color: #141024b2;
+  text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 20% 0% 2%;
+  flex-wrap: wrap;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+}
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
+  display: block;
+}
+
+.tab > label {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #141024;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.tab > input[type="radio"]:checked + label {
+  color: var(--red-color);
+}
