@@ -1,11 +1,3 @@
-/* * {
-  font-family: "Jost", sans-serif
-}
-
-* {
-max-width: 1920px;
-} */
-
 html {
   scroll-behavior: smooth;
   max-width: 1920px;
@@ -76,6 +68,7 @@ html {
 }
 
 .button {
+  text-decoration: none;
   width: 260px;
   height: 79px;
   padding: 25px 54px 25px 54px;
@@ -84,13 +77,13 @@ html {
   background-color: #d52027;
   color: #ffffff;
   cursor: pointer;
-  margin-top: 5%;
 }
 
 .promo-information__about {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
+  margin-bottom: 3rem;
 }
 
 .promo__img {
@@ -174,7 +167,7 @@ html {
   max-width: 360px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: left;
   color: #141024b2;
 }
@@ -215,7 +208,7 @@ html {
 .slide__image__name {
   font-size: 24px;
   font-weight: 600;
-  line-height: 38.4px;
+  line-height: 38px;
   align-self: flex-start;
   margin-top: 5%;
 }
@@ -223,7 +216,7 @@ html {
 .slide__about {
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   align-self: flex-start;
   margin-top: 3%;
 }
@@ -284,7 +277,7 @@ html {
   align-self: center;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: center;
   text-wrap: wrap;
   width: 70%;
@@ -293,7 +286,7 @@ html {
 .price-card__button {
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: center;
   padding: 25px 54px 25px 54px;
   border-radius: 5px;
@@ -321,7 +314,7 @@ html {
 .stock h1 {
   font-size: 36px;
   font-weight: 600;
-  line-height: 46.8px;
+  line-height: 47px;
   text-align: left;
   max-width: 476px;
 }
@@ -346,7 +339,7 @@ html {
   background-color: #f6f6f6;
   font-size: 18px;
   font-weight: 400;
-  line-height: 26.01px;
+  line-height: 26px;
   text-align: left;
   color: #282944b2;
 }
@@ -383,7 +376,7 @@ html {
 .footer__left h2 {
   font-size: 16px;
   font-weight: 400;
-  line-height: 25.6px;
+  line-height: 26px;
   text-align: left;
   color: #ffffffb2;
 }
@@ -407,8 +400,6 @@ body {
   background: rgba(0, 0, 0, 0.5); /* цвет фона */
   z-index: 1050;
   opacity: 0; /* по умолчанию модальное окно прозрачно */
-  /* -webkit-transition: opacity 200ms ease-in; 
-  -moz-transition: opacity 200ms ease-in; */
   transition: opacity 200ms ease-in; /* анимация перехода */
   pointer-events: none; /* элемент невидим для событий мыши */
   margin: 0;
@@ -444,17 +435,9 @@ body {
 /* свойства для блока, содержащего контент модального окна */
 .modal-content {
   position: relative;
-  /* display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox; */
   display: flex;
-  /* -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column; */
   flex-direction: column;
   background-color: #fff;
-  /* -webkit-background-clip: padding-box; */
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -462,24 +445,14 @@ body {
 }
 @media (min-width: 768px) {
   .modal-content {
-    /* -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5); */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 }
 /* свойства для заголовка модального окна */
 .modal-header {
-  /* display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox; */
   display: flex;
   flex-direction: row;
-  /* -webkit-box-align: center;
-  -webkit-align-items: center; */
-  /* -ms-flex-align: center; */
   align-items: center;
-  /* -webkit-box-pack: justify;
-  -webkit-justify-content: space-between; */
-  /* -ms-flex-pack: justify; */
   justify-content: space-between;
   padding: 3%;
   border-bottom: 1px solid #eceeef;
@@ -525,7 +498,6 @@ body {
 
 /* свойства для кнопки "Закрыть" */
 .close {
-  /* float: right; */
   font-size: 18px;
   font-weight: 400;
   line-height: 28.8px;
@@ -545,9 +517,6 @@ body {
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
   position: relative;
-  /* -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto; */
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
