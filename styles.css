@@ -2,14 +2,20 @@ html {
   scroll-behavior: smooth;
   max-width: 1920px;
   font-family: "Jost", sans-serif;
+  --main-bg-color: #141024;
+  --white-text-color: #ffffff;
+  --red-color: #d52027;
+  --reward-bg-color: #f9f9f9;
+  --registration-form-bg-color: #f6f6f6;
+  --footer-logo-text-color: #ffffffb2;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #141024;
-  color: #ffffff;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
   padding: 20px 60px;
 }
 
@@ -29,7 +35,7 @@ html {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .navigation__item:not(:last-child) {
@@ -47,8 +53,8 @@ html {
   flex-flow: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #141024;
-  color: #ffffff;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
   height: 1080px;
 }
 
@@ -74,8 +80,8 @@ html {
   padding: 25px 54px 25px 54px;
   border-radius: 5px;
   border-style: none;
-  background-color: #d52027;
-  color: #ffffff;
+  background-color: var(--red-color);
+  color: var(--white-text-color);
   cursor: pointer;
 }
 
@@ -119,7 +125,7 @@ html {
   font-weight: 600;
   line-height: 112px;
   text-align: left;
-  color: #d52027;
+  color: var(--red-color);
 }
 
 .definition-table-card__about {
@@ -131,7 +137,7 @@ html {
 }
 
 .reward-table-background {
-  background-color: #f9f9f9;
+  background-color: var(--reward-bg-color);
   max-height: 485px;
 }
 
@@ -183,9 +189,7 @@ html {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
   margin-left: 22%;
 }
 
@@ -239,7 +243,7 @@ html {
 .price-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #141024;
+  border: 1px solid var(--main-bg-color);
   border-radius: 20px;
   padding: 15px 20px;
   transition: all 0.4s ease-out;
@@ -252,7 +256,7 @@ html {
   background-color: #141024;
   padding: 30px 40px;
   transition: all 0.4s ease-out;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .price-card:not(:last-child) {
@@ -290,9 +294,9 @@ html {
   text-align: center;
   padding: 25px 54px 25px 54px;
   border-radius: 5px;
-  background-color: #d52027;
-  border-color: #d52027;
-  color: #ffffff;
+  background-color: var(--red-color);
+  border-color: var(--red-color);
+  color: var(--white-text-color);
   gap: 10px;
   cursor: pointer;
 }
@@ -302,11 +306,11 @@ html {
   display: flex;
   align-items: center;
   height: 460px;
-  background-color: #d52027;
+  background-color: var(--red-color);
 }
 
 .stock {
-  color: #ffffff;
+  color: var(--white-text-color);
   align-self: flex-start;
   padding-top: 6%;
 }
@@ -336,7 +340,7 @@ html {
   opacity: 0px;
   height: 64px;
   margin: 10px 0px;
-  background-color: #f6f6f6;
+  background-color: var(--registration-form-bg-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -349,8 +353,8 @@ html {
 }
 
 .registration__form input:last-child {
-  background-color: #141024;
-  color: #ffffff;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -360,8 +364,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #141024;
-  color: #ffffff;
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
   height: 159px;
   padding: 0px 30px;
 }
@@ -378,7 +382,7 @@ html {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
-  color: #ffffffb2;
+  color: var(--footer-logo-text-color);
 }
 
 /* стилизация содержимого страницы */
@@ -411,7 +415,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   padding: 4% 0% 16% 0%;
-  color: #d52027;
+  color: var(--red-color);
 }
 
 /* при отображении модального окно */
@@ -487,7 +491,7 @@ body {
 .modal-title__about {
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   text-align: left;
   text-wrap: nowrap;
 }
@@ -500,7 +504,7 @@ body {
 .close {
   font-size: 18px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 29px;
   align-self: flex-start;
   color: #141024b2;
   text-decoration: none;
@@ -560,5 +564,5 @@ body {
 }
 
 .tab > input[type="radio"]:checked + label {
-  color: #d52027;
+  color: var(--red-color);
 }
